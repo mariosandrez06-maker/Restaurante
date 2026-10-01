@@ -3,14 +3,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Don Chuy | Menú</title>
-
+    <link rel="stylesheet" href="./css/estilo-restaurante.css">
     <body>
         <header>
             <h1>Menú del Restaurante</h1>
             <p>Aquí verás todos los platillos disponibles para ordenar en nuestro menú.</p>
         </header>
 
-        <nav>
+        <nav class="menu-navegacion">
             <ul>
             <li><a href="index.html">Principal</a></li>
             <li><a href="Nosotros.html">Nosotros</a></li>
@@ -23,7 +23,7 @@
         <main>
             <section id="menu-entradas">
                 
-                <h2>Entradas disponibles</h2>
+                <h2 class="titulos_categorias">Entradas disponibles</h2>
                 <span>Variedad de entradas para esperar su platillo fuerte.</span>
                 <ul>
                     <li>Anafre Tradicional<br><span>Es el rey de las entradas hondureñas. Consiste en una mezcla de frijoles fritos licuados, quesillo derretido local y, frecuentemente, chorizo suelto o chismol (pico de gallo). Se mantiene caliente a la mesa usando un anafe de barro con carbón encendido abajo.</span></li>
@@ -38,7 +38,7 @@
                 <h2>Menú Principal</h2>
                 
                 <section id="menu-platos">
-                    <h3>Platos Fuertes</h3>
+                    <h3 class="titulos_categorias">Platos Fuertes</h3>
                     <table border="3">
                         <thead>
                             <tr>
@@ -46,6 +46,7 @@
                                 <th>Platillo</th>
                                 <th>Descripción</th>
                                 <th>Precio</th>
+                                <th>Ordenar</th>
                             
                             </tr>
                         </thead>
@@ -55,25 +56,28 @@
                                 <td>Baleadas</td>
                                 <td>El Platillo hondureño con excelencia. Incluye frijoles, queso y huevo.</td>
                                 <td>L. 30</td>
+                                <td><button class="btn-ordenar">Ordenar</button></td>
                             </tr>
 
                             <tr>
                                 <td>Plato Típico</td>
                                 <td> El plato fuerte tradicional por excelencia que incluye carne de res o cerdo asada a la parrilla, servida con frijoles fritos, arroz, plátano frito (o tajadas de guineo), queso fresco o cuajada, chismol y tortillas de maíz recién hechas.</td>
                                 <td>L. 170</td>
+                                <td><button class="btn-ordenar">Ordenar</button></td>
                             </tr>
 
                             <tr>
                                 <td>Pollo Chuco</td>
                                 <td> Pollo frito crujiente y bien sazonado, servido sobre una cama abundante de tajadas de guineo verde frito, cubierto con repollo picado, aderezo criollo de la casa y encurtido de cebolla.</td>
                                 <td>L. 180</td>
+                                <td><button class="btn-ordenar">Ordenar</button></td>
                             </tr>
                         </tbody>
                     </table>
                 </section>
 
                 <section id="menu-bebidas">
-                    <h3>Bebidas</h3>
+                    <h3 class="titulos_categorias">Bebidas</h3>
 
                     <table border="3">
                         <thead>
@@ -81,6 +85,7 @@
                                 <td>Bebida</td>
                                 <td>Descripción</td>
                                 <td>Precio</td>
+                                <td>Ordenar</td>
                             </tr>
                         </thead>
 
@@ -90,24 +95,28 @@
                                 <td>Refresco en lata o vidrio</td>
                                 <td>No hay mucho que decir, ¿no?</td>
                                 <td>L. 30 / L. 35</td>
+                                <td><button class="btn-ordenar">Ordenar</button></td>
                             </tr>
                             
                             <tr>
                                 <td>Horchata Catracha</td>
                                 <td>Bebida refrescante hecha a base de arroz y semillas de morro (jícaro) molidas, condimentada con canela, vainilla y azúcar, que se sirve muy fría con abundante hielo.</td>
                                 <td>L. 55</td>
+                                <td><button class="btn-ordenar">Ordenar</button></td>
                             </tr>
 
                             <tr>
                                 <td>Pozol</td>
                                 <td>Bebida densa y energizante de origen mesoamericano preparada con maíz tierno cocido, leche, canela y azúcar, tradicionalmente servida en un huacal de barro o jícara con hielo picado.</td>
                                 <td>L. 60</td>
+                                <td><button class="btn-ordenar">Ordenar</button></td>
                             </tr>
 
                             <tr>
                                 <td>Guifiti</td>
                                 <td>Bebida espirituosa tradicional de la comunidad Garífuna en la costa norte, elaborada a base de una infusión de hierbas medicinales, raíces, especias y ron, consumida típicamente en un trago corto o "shot" a temperatura ambiente.</td>
                                 <td>L. 80</td>
+                                <td><button class="btn-ordenar">Ordenar</button></td>
                             </tr>
 
 
@@ -116,7 +125,7 @@
                 </section>
 
                 <section id="menu-postres">
-                    <h3>Selección de Postres</h3>
+                    <h3 class="titulos_categorias">Selección de Postres</h3>
 
                      <table border="3">
                         <thead>
@@ -124,6 +133,7 @@
                                 <td>Postre</td>
                                 <td>Descripción</td>
                                 <td>Precio</td>
+                                <td>Ordenar</td>
                             </tr>
                         </thead>
 
@@ -133,18 +143,21 @@
                                 <td>Torrejas en Miel </td>
                                 <td>Pan de yema esponjoso rebozado en huevo y cocinado a fuego lento en un almíbar espeso hecho a base de dulce de rapadura (panela), canela y clavos de olor.</td>
                                 <td>L. 65</td>
+                                <td><button class="btn-ordenar">Ordenar</button></td>
                             </tr>
                             
                             <tr>
                                 <td>Arroz con Leche</td>
                                 <td>Arroz blanco cocido lentamente en leche entera, aromatizado con canela en astillas y cáscara de limón, endulzado al gusto y decorado con una lluvia de canela en polvo al servir.</td>
                                 <td>L. 55</td>
+                                <td><button class="btn-ordenar">Ordenar</button></td>
                             </tr>
 
                             <tr>
                                 <td>Ayote en Miel</td>
                                 <td>Trozos de ayote maduro cocidos en una reducción densa de dulce de rapadura hasta que la pulpa absorbe por completo el almíbar y la cáscara se vuelve suave.</td>
                                 <td>L. 60</td>
+                                <td><button class="btn-ordenar">Ordenar</button></td>
                             </tr>
                         </tbody>
                     </table>
